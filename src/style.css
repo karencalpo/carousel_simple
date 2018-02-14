@@ -14,29 +14,91 @@ h4 {
   color: white;
 }
 
-@media (mind-width: 768px) {
-    h4 {
-      font-size: 3em;
+@media screen and (min-width: 320px) {
+    div.col img {
+        width: 110px;
+        height: 61.6px;
     }
+    
+    .flex-grid-fourths .col {
+      margin: 0 4px;
+      border: 1px solid white;
+      display: flex;
+      flex: 0 0 110px;
+      flex-wrap: wrap;
+    }
+    
+    .callout-text {
+      text-align: center;
+      max-width: 320px;
+      margin: 20px auto;
+    }
+    
+    .testimonial-carousel {
+        background-image: url("https://assets.pcmag.com/media/images/437252-netflix-tips.jpg?thumb=y&width=405&height=228");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        height: 500px;
+        position: relative;
+        padding: 20px 0px;
+        display: flex;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    
+  .testimonial-carousel .icon-container  svg.lnr {
+    font-size: 2.6em;
+  }
+    
+  .testimonial-carousel p {
+      font-size: 1.4em;
+  }
+    
+  .testimonial-carousel .icon-container {
+    max-width: 50px;
+    padding: 0 10px;
+  }
+    
+  h4 {
+    font-size: 3em;
+  }
+    
+  div.col img {
+    width: 220px;
+    height: 123.2px;
+  }
+    
+  .flex-grid-fourths .col {
+      margin: 0 20px;
+      border: 1px solid white;
+      display: flex;
+      flex: 0 0 220px;
+      flex-wrap: wrap;
+    }
+    
+    .testimonial-carousel {
+        background-image: url("https://assets.pcmag.com/media/images/437252-netflix-tips.jpg?thumb=y&width=810&height=456");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        height: 500px;
+        position: relative;
+        padding: 20px 0px;
+        display: flex;
+    }
+    
 }
 
 .callout-text {
-/*  text-align: center;*/
+  text-align: center;
   max-width: 1140px;
   margin: 20px auto;
-}
-
-.testimonial-carousel {
-  background-image: url("https://assets.pcmag.com/media/images/437252-netflix-tips.jpg?thumb=y&width=810&height=456");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  height: 500px;
-  position: relative;
-  padding: 20px 0px;
-  display: flex;
-
 }
 
 .testimonial-carousel .icon-container {
@@ -51,12 +113,7 @@ h4 {
 
 }
 
-@media (min-width: 768px) {
-  .testimonial-carousel .icon-container {
-    max-width: 50px;
-    padding: 0 10px;
-  }
-}
+
 
 .lnr {
   display: inline-block;
@@ -71,25 +128,11 @@ h4 {
   justify-content: space-between;
 }
 
-.flex-grid-fourths .col {
-  margin: 0 20px;
-  border: 1px solid white;
-  display: flex;
-  flex: 0 0 220px;
-  flex-wrap: wrap;
-}
-
 .testimonial-carousel .icon-container  svg.lnr {
   color: #dadada;
   font-size: 1.6em;
   cursor: pointer;
   transition: color 0.3s linear;
-}
-
-@media (min-width: 768px) {
-  .testimonial-carousel .icon-container  svg.lnr {
-    font-size: 2.6em;
-  }
 }
 
 .testimonial-carousel .icon-container  svg.lnr:hover {
@@ -99,12 +142,6 @@ h4 {
 .testimonial-carousel p {
   font-family: "Bad Script", cursive;
   font-size: 1em;
-}
-
-@media (min-width: 768px) {
-  .testimonial-carousel p {
-      font-size: 1.4em;
-  }
 }
 
 .testimonial-items {
