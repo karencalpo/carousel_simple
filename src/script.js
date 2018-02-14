@@ -51,10 +51,10 @@ const init = () => {
 	}
     
     //let autoClick = new Event('autoClick');
-    const autoScroll = () => {
-        arrows[1].dispatchEvent(autoClick);
-    }
-    
-    scrollInterval = setInterval(autoScroll, interval);
+//    const autoScroll = () => {
+//        arrows[1].dispatchEvent(autoClick);
+//    }
+//    
+//    scrollInterval = setInterval(autoScroll, interval);
     
 }
