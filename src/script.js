@@ -20,7 +20,7 @@ const init = () => {
     arrows[0].addEventListener('click', (e) => {
        e = e || window.event;
         e.preventDefault();
-        carouselCount = carouselCount - 100;
+        carouselCount = carouselCount - 100; 
         slider();
         if (e.type !== 'autoClick') {
             clearInterval(scrollInterval);
@@ -29,7 +29,7 @@ const init = () => {
     });
     
     arrows[1].addEventListener('click', sliderEvent);
-    arrows[1].addEventListener('autoClick', sliderEvent);
+    //arrows[1].addEventListener('autoClick', sliderEvent);
     
     
     
@@ -50,7 +50,7 @@ const init = () => {
 		}
 	}
     
-    let autoClick = new Event('autoClick');
+    //let autoClick = new Event('autoClick');
     const autoScroll = () => {
         arrows[1].dispatchEvent(autoClick);
     }

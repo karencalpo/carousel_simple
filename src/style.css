@@ -5,11 +5,13 @@
 body,html {
   margin: 0;
   padding: 0;
+  background-color: #000000;
 }
 
 h4 {
   font-family: 'Lato', sans-serif;
   font-size: 2em;
+  color: white;
 }
 
 @media (mind-width: 768px) {
@@ -19,13 +21,13 @@ h4 {
 }
 
 .callout-text {
-  text-align: center;
+/*  text-align: center;*/
   max-width: 1140px;
   margin: 20px auto;
 }
 
 .testimonial-carousel {
-  background-image: url("https://images.unsplash.com/photo-1489347215392-cee3b4f539aa?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=");
+  background-image: url("https://assets.pcmag.com/media/images/437252-netflix-tips.jpg?thumb=y&width=810&height=456");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,9 +72,11 @@ h4 {
 }
 
 .flex-grid-fourths .col {
-  width: 23%;
-  padding: 50px;
+  margin: 0 20px;
   border: 1px solid white;
+  display: flex;
+  flex: 0 0 220px;
+  flex-wrap: wrap;
 }
 
 .testimonial-carousel .icon-container  svg.lnr {
